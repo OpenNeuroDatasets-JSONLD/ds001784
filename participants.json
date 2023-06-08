@@ -1,7 +1,13 @@
 {
   "participant_id": {
     "LongName": "Participant ID number",
-    "Description": "ID number assigned to participant (prefix sub-)."
+    "Description": "ID number assigned to participant (prefix sub-).",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": ""
+      }
+    }
   },
   "study_id": {
     "LongName": "Study ID number",
@@ -13,16 +19,44 @@
     "Levels": {
       "F": "female",
       "M": "male"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": ""
+      },
+      "Levels": {
+        "F": {
+          "TermURL": "snomed:248152002",
+          "Label": ""
+        },
+        "M": {
+          "TermURL": "snomed:248153007",
+          "Label": ""
+        }
+      }
     }
   },
   "age": {
     "LongName": "Age in years",
     "Description": "Age of participant in years (rounded to protect identities).",
-    "Units": "years"
+    "Units": "years",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": ""
+      }
+    }
   },
   "behavior": {
     "LongName": "Behavior availability",
-    "Description": "Whether affective MSIT behavioral data is available for the participant."
+    "Description": "Whether affective MSIT behavioral data is available for the participant.",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Assessment",
+        "Label": ""
+      }
+    }
   },
   "mri": {
     "LongName": "MRI availability",
@@ -42,6 +76,22 @@
     "Levels": {
       "MDD": "major depressive disorder",
       "OCD": "obsessive compulsive disorder"
+    },
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Diagnosis",
+        "Label": ""
+      },
+      "Levels": {
+        "MDD": {
+          "TermURL": "snomed:370143000",
+          "Label": ""
+        },
+        "OCD": {
+          "TermURL": "snomed:191736004",
+          "Label": ""
+        }
+      }
     }
   },
   "ybocs_bl": {
