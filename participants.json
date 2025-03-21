@@ -60,17 +60,7 @@
   },
   "behavior": {
     "LongName": "Behavior availability",
-    "Description": "Whether affective MSIT behavioral data is available for the participant.",
-    "Annotations": {
-      "IsAbout": {
-        "TermURL": "nb:Assessment",
-        "Label": ""
-      },
-      "IsPartOf": {
-        "TermURL": "cogatlas:trm_4f2419c4a1646",
-        "Label": ""
-      }
-    }
+    "Description": "Whether affective MSIT behavioral data is available for the participant."
   },
   "mri": {
     "LongName": "MRI availability",
